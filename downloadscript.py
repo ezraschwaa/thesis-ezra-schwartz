@@ -13,11 +13,11 @@ with open(csv_filename+".csv".format(csv_filename), 'r') as csv_file:
 	count = -1
 	for line in reader(csv_file):
 		count+=1
-		if os.path.isfile("images/" + str(line)+ ".jpg"):
+		if os.path.isfile("dankmemes_images/" + str(line)+ ".jpg"):
 			print("Image skipped for %s" % str(line))
 		else:
 			try:
-				urlretrieve(line[0], "images/"+str(count)+".jpg")
+				urlretrieve(line[0], "dankmemes_images/"+str(count)+".jpg")
 				print("Image saved for %s" % str(line))
 			except (urllib.error.HTTPError, urllib.error.URLError):
 				print("skipped bc httperror")
