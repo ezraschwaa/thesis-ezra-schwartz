@@ -1,3 +1,9 @@
 [submodule "cycleGAN"]
 	path = cycleGAN
 	url = https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.git
+[submodule "BEGAN-tensorflow"]
+	path = BEGAN-tensorflow
+	url = https://github.com/carpedm20/BEGAN-tensorflow.git
+[submodule "Creative-Adversarial-Networks"]
+	path = Creative-Adversarial-Networks
+	url = https://github.com/mlberkeley/Creative-Adversarial-Networks.git
